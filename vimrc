@@ -110,7 +110,7 @@ colo ayu
 
 " KEYMAPPING -------------------------------------- {{{
 
-	nnoremap <C-t> :term ++rows=10<CR>
+	nnoremap <C-t> :wall<CR> :term ++rows=10<CR>
 
 	nnoremap <C-n> :NERDTree<CR>
 	
