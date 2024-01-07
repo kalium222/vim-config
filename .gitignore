@@ -6,4 +6,5 @@
 !*.vim
 !.gitignore
 !/plugin_config/
+!README.md
 
