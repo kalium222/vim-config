@@ -1,0 +1,8 @@
+# Ignor all
+*
+
+# Include
+!/plugin_config/*.vim
+!vimrc
+!.gitignore
+
