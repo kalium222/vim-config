@@ -110,7 +110,10 @@ colo ayu
 
 " KEYMAPPING -------------------------------------- {{{
 
-	nnoremap <C-t> :NERDTree<CR>
+	nnoremap <C-t> :term ++rows=10<CR>
+
+	nnoremap <C-n> :NERDTree<CR>
+	
 	inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 	inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 	inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
