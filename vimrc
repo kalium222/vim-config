@@ -68,8 +68,8 @@ filetype plugin on
 filetype indent on
 syntax on
 
-" Do not save backup files.
 set nobackup
+set noswapfile
 
 set number
 set shiftwidth=2
