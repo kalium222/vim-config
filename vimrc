@@ -37,8 +37,9 @@ call plug#begin('~/.vim/plugged')
 	source ~/.vim/plugin_config/NERDTree_config.vim
 
 	" themes
-  Plug 'ayu-theme/ayu-vim'
+	Plug 'Everblush/everblush.vim'
   Plug 'vim-airline/vim-airline'
+	source ~/.vim/plugin_config/airline_config.vim
 
 	" editing
 	Plug 'tpope/vim-surround'
@@ -57,7 +58,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'rhysd/vim-lsp-ale'
 	source ~/.vim/plugin_config/ALE_config.vim
 
-	call plug#end()
+call plug#end()
 
 " }}}
 
@@ -103,9 +104,9 @@ set history=100
 
 " THEMES -------------------------------------------------------------------- {{{
 
-set termguicolors
-let ayucolor="dark"
-colo ayu
+" set termguicolors
+" let ayucolor="dark"
+colo everblush
 
 " }}}
 
