@@ -45,8 +45,6 @@ call plug#begin('~/.vim/plugged')
 	Plug 'jiangmiao/auto-pairs'
 
 	" lsp support and functionality
-	Plug 'dense-analysis/ale'
-
 	Plug 'prabirshrestha/async.vim'
 	Plug 'prabirshrestha/vim-lsp'	
 	source ~/.vim/plugin_config/vim-lsp_config.vim
@@ -54,6 +52,10 @@ call plug#begin('~/.vim/plugged')
 	Plug 'prabirshrestha/asyncomplete-lsp.vim'
 	Plug 'hrsh7th/vim-vsnip'
 	Plug 'hrsh7th/vim-vsnip-integ'
+
+	Plug 'dense-analysis/ale'
+	Plug 'rhysd/vim-lsp-ale'
+	source ~/.vim/plugin_config/ALE_config.vim
 
 	call plug#end()
 
