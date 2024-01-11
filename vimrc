@@ -37,7 +37,7 @@ call plug#begin('~/.vim/plugged')
 	source ~/.vim/plugin_config/NERDTree_config.vim
 
 	" themes
-	Plug 'Everblush/everblush.vim'
+	Plug 'morhetz/gruvbox'
   Plug 'vim-airline/vim-airline'
 	source ~/.vim/plugin_config/airline_config.vim
 
@@ -79,7 +79,7 @@ set shiftwidth=2
 set tabstop=2
 set noexpandtab
 set cursorline
-set cursorcolumn
+" set cursorcolumn
 
 " Do not let cursor scroll below or above N number of lines when scrolling.
 set scrolloff=10
@@ -104,9 +104,8 @@ set history=100
 
 " THEMES -------------------------------------------------------------------- {{{
 
-" set termguicolors
-" let ayucolor="dark"
-colo everblush
+let g:gruvbox_italic=1
+colo gruvbox
 
 " }}}
 
