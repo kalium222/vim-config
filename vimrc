@@ -75,8 +75,8 @@ set nobackup
 set noswapfile
 
 set number
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 set noexpandtab
 set cursorline
 " set cursorcolumn
@@ -112,9 +112,21 @@ colo gruvbox
 
 " KEYMAPPING -------------------------------------- {{{
 
-	nnoremap <C-t> :wall<CR> :term ++rows=10<CR>
+	let mapleader = "\<Tab>"
 
-	nnoremap <C-n> :NERDTree<CR>
+	nnoremap <leader>t :wall \| :term ++rows=10<CR>
+	nnoremap <leader>T :wall \| :vert ter<CR>
+	nnoremap <leader>V :vs $MYVIMRC<CR>
+	nnoremap <leader>h <C-W>h
+	nnoremap <leader>j <C-W>j
+	nnoremap <leader>k <C-W>k
+	nnoremap <leader>l <C-W>l
+
+	nnoremap <leader>d :LspDefinition<CR>
+	nnoremap <leader>D :LspDeclaration<CR>
+	nnoremap <leader>H :LspHover<CR>
+
+	nnoremap <leader>n :NERDTree<CR>
 	
 	inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 	inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
