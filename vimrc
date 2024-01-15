@@ -48,6 +48,7 @@ call plug#begin('~/.vim/plugged')
   " editing
   Plug 'tpope/vim-surround'
   Plug 'jiangmiao/auto-pairs'
+  Plug 'preservim/nerdcommenter'
 
   " lsp support and functionality
   Plug 'prabirshrestha/async.vim'
