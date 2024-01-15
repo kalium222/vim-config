@@ -119,7 +119,7 @@ colo gruvbox
 
   let mapleader = "\<Tab>"
 
-  nnoremap <leader>t :wall \| :term ++rows=10<CR>
+  nnoremap <leader>t :wall \| :term ++rows=15<CR>
   nnoremap <leader>T :wall \| :vert ter<CR>
   nnoremap <leader>V :vs $MYVIMRC<CR>
   nnoremap <leader>h :wall<CR> \| <C-W>h
