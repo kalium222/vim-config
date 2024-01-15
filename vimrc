@@ -1,9 +1,9 @@
 " An example for a vimrc file.
 "
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2019 Dec 17
+" Maintainer:  Bram Moolenaar <Bram@vim.org>
+" Last change:  2019 Dec 17
 "
-"	Modified by kalium for customization
+"  Modified by kalium for customization
 
 
 " When started as "evim", evim.vim will already have done these settings, bail
@@ -23,8 +23,8 @@ augroup vimrcEx
 " This will enable code folding.
 " Use the marker method of folding.
 augroup filetype_vim
-    autocmd!
-    autocmd FileType vim setlocal foldmethod=marker
+  autocmd!
+  autocmd FileType vim setlocal foldmethod=marker
 augroup END
 
 
@@ -32,34 +32,38 @@ augroup END
 
 call plug#begin('~/.vim/plugged')
 
-	" filesystem tree
+  " filesystem tree
   Plug 'preservim/nerdtree'
-	source ~/.vim/plugin_config/NERDTree_config.vim
+  source ~/.vim/plugin_config/NERDTree_config.vim
 
-	" themes
-	Plug 'morhetz/gruvbox'
+  " themes
+  Plug 'morhetz/gruvbox'
   Plug 'vim-airline/vim-airline'
-	source ~/.vim/plugin_config/airline_config.vim
+  source ~/.vim/plugin_config/airline_config.vim
 
-	" editing
-	Plug 'tpope/vim-surround'
-	Plug 'jiangmiao/auto-pairs'
+  " git
+  Plug 'airblade/vim-gitgutter'
+  source ~/.vim/plugin_config/gitgutter_config.vim
 
-	" lsp support and functionality
-	Plug 'prabirshrestha/async.vim'
-	Plug 'prabirshrestha/vim-lsp'	
-	source ~/.vim/plugin_config/vim-lsp_config.vim
-	Plug 'prabirshrestha/asyncomplete.vim'
-	Plug 'prabirshrestha/asyncomplete-lsp.vim'
-	Plug 'hrsh7th/vim-vsnip'
-	Plug 'hrsh7th/vim-vsnip-integ'
+  " editing
+  Plug 'tpope/vim-surround'
+  Plug 'jiangmiao/auto-pairs'
 
-	Plug 'dense-analysis/ale'
-	Plug 'rhysd/vim-lsp-ale'
-	source ~/.vim/plugin_config/ALE_config.vim
+  " lsp support and functionality
+  Plug 'prabirshrestha/async.vim'
+  Plug 'prabirshrestha/vim-lsp'  
+  source ~/.vim/plugin_config/vim-lsp_config.vim
+  Plug 'prabirshrestha/asyncomplete.vim'
+  Plug 'prabirshrestha/asyncomplete-lsp.vim'
+  Plug 'hrsh7th/vim-vsnip'
+  Plug 'hrsh7th/vim-vsnip-integ'
+
+  Plug 'dense-analysis/ale'
+  Plug 'rhysd/vim-lsp-ale'
+  source ~/.vim/plugin_config/ALE_config.vim
 
 call plug#end()
-
+   
 " }}}
 
 
@@ -112,25 +116,27 @@ colo gruvbox
 
 " KEYMAPPING -------------------------------------- {{{
 
-	let mapleader = "\<Tab>"
+  let mapleader = "\<Tab>"
 
-	nnoremap <leader>t :wall \| :term ++rows=10<CR>
-	nnoremap <leader>T :wall \| :vert ter<CR>
-	nnoremap <leader>V :vs $MYVIMRC<CR>
-	nnoremap <leader>h <C-W>h
-	nnoremap <leader>j <C-W>j
-	nnoremap <leader>k <C-W>k
-	nnoremap <leader>l <C-W>l
+  nnoremap <leader>t :wall \| :term ++rows=10<CR>
+  nnoremap <leader>T :wall \| :vert ter<CR>
+  nnoremap <leader>V :vs $MYVIMRC<CR>
+  nnoremap <leader>h :wall<CR> \| <C-W>h
+  nnoremap <leader>j :wall<CR> \| <C-W>j
+  nnoremap <leader>k :wall<CR> \| <C-W>k
+  nnoremap <leader>l :wall<CR> \| <C-W>l
 
-	nnoremap <leader>d :LspDefinition<CR>
-	nnoremap <leader>D :LspDeclaration<CR>
-	nnoremap <leader>H :LspHover<CR>
+  nnoremap <leader>d :LspDefinition<CR>
+  nnoremap <leader>D :LspDeclaration<CR>
+  nnoremap <leader>H :LspHover<CR>
+  nnoremap <leader>r :LspReference<CR>
 
-	nnoremap <leader>n :NERDTree<CR>
-	
-	inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-	inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-	inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+  nnoremap <leader>n :NERDTree<CR>
+  nnoremap <leader>R :NERDTreeRefreshRoot<CR>
+  
+  inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+  inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+  inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
 
 " }}}
 

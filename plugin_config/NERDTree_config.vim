@@ -11,3 +11,5 @@ autocmd BufEnter * if winnr() == winnr('h') && bufname('#') =~ 'NERD_tree_\d\+' 
     \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
 let g:NERDTreeFileLines = 1
 
+let NERDTreeShowHidden = 1
+
