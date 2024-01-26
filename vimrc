@@ -63,7 +63,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'rhysd/vim-lsp-ale'
   source ~/.vim/plugin_config/ALE_config.vim
 
-call plug#end()
+  " python
+  "Plug 'python-mode/python-mode', {'for':'python', 'branch':'develop'}
+  "source ~/.vim/plugin_config/Pymode_config.vim
+
+  call plug#end()
    
 " }}}
 
@@ -82,7 +86,7 @@ set noswapfile
 set number
 set shiftwidth=4
 set tabstop=4
-set noexpandtab
+set expandtab
 set cursorline
 " set cursorcolumn
 

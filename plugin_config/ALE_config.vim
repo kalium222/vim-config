@@ -8,6 +8,7 @@ let g:ale_disable_lsp=1
 " Set linter from vim-lsp
 let g:ale_linters = {
 \		'cpp': ['vim-lsp'],
+\       'python': ['vim-lsp ']
 \	}
 
 let g:ale_sign_error = '😰'
