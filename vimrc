@@ -45,6 +45,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'airblade/vim-gitgutter'
   source ~/.vim/plugin_config/gitgutter_config.vim
 
+  " markdown
+  Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+  source ~/.vim/plugin_config/mark_pre_config.vim
+
   " editing
   Plug 'tpope/vim-surround'
   Plug 'jiangmiao/auto-pairs'
@@ -62,10 +66,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'dense-analysis/ale'
   Plug 'rhysd/vim-lsp-ale'
   source ~/.vim/plugin_config/ALE_config.vim
-
-  " python
-  "Plug 'python-mode/python-mode', {'for':'python', 'branch':'develop'}
-  "source ~/.vim/plugin_config/Pymode_config.vim
 
   call plug#end()
    
@@ -138,6 +138,9 @@ colo gruvbox
 
   nnoremap <leader>n :NERDTree<CR>
   nnoremap <leader>R :NERDTreeRefreshRoot<CR>
+
+  nnoremap <leader>p :MarkdownPreview<CR>
+  nnoremap <leader>P :MarkdownPreviewStop<CR>
   
   inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
   inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
