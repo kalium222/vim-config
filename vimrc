@@ -115,6 +115,7 @@ set history=100
 
 let g:gruvbox_italic=1
 colo gruvbox
+set background=dark
 
 " }}}
 
