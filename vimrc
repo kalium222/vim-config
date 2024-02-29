@@ -108,6 +108,8 @@ set ruler
 
 set history=100
 
+set clipboard=unnamedplus
+
 " }}}
 
 
