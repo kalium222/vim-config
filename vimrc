@@ -55,9 +55,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdcommenter'
 
   " lsp support and functionality
-  Plug 'prabirshrestha/async.vim'
   Plug 'prabirshrestha/vim-lsp'  
   source ~/.vim/plugin_config/vim-lsp_config.vim
+  Plug 'prabirshrestha/async.vim'
   Plug 'prabirshrestha/asyncomplete.vim'
   Plug 'prabirshrestha/asyncomplete-lsp.vim'
   Plug 'hrsh7th/vim-vsnip'
