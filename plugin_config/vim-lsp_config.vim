@@ -18,6 +18,15 @@ if executable('pylsp')
         \ })
 endif
 
+" register texlab
+if executable(expand('/usr/bin/texlab'))
+  autocmd User lsp_setup call lsp#register_server({
+        \'name': 'texlab',
+        \'cmd': {server_info->[expand('/usr/bin/texlab')]},
+        \'whitelist': ['tex']
+        \})
+endif
+
 " disable diagnostics support
 let g:lsp_diagnostics_enabled = 0         
 
