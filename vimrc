@@ -96,17 +96,21 @@ call plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdcommenter'
 
   " lsp support and functionality
-  Plug 'prabirshrestha/vim-lsp'  
-  source ~/.vim/plugin_config/vim-lsp_config.vim
-  Plug 'prabirshrestha/async.vim'
-  Plug 'prabirshrestha/asyncomplete.vim'
-  Plug 'prabirshrestha/asyncomplete-lsp.vim'
-  Plug 'hrsh7th/vim-vsnip'
-  Plug 'hrsh7th/vim-vsnip-integ'
+  "Plug 'prabirshrestha/vim-lsp'  
+  "source ~/.vim/plugin_config/vim-lsp_config.vim
+  "Plug 'prabirshrestha/async.vim'
+  "Plug 'prabirshrestha/asyncomplete.vim'
+  "Plug 'prabirshrestha/asyncomplete-lsp.vim'
+  "Plug 'hrsh7th/vim-vsnip'
+  "Plug 'hrsh7th/vim-vsnip-integ'
 
-  Plug 'dense-analysis/ale'
-  Plug 'rhysd/vim-lsp-ale'
-  source ~/.vim/plugin_config/ALE_config.vim
+  "Plug 'dense-analysis/ale'
+  "Plug 'andreypopp/asyncomplete-ale.vim'
+  "Plug 'rhysd/vim-lsp-ale'
+  "source ~/.vim/plugin_config/ALE_config.vim
+
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  source ~/.vim/plugin_config/coc.vim
 
   call plug#end()
    
@@ -129,15 +133,16 @@ set background=dark
   nnoremap <leader>t :wall \| :term ++rows=15<CR>
   nnoremap <leader>T :wall \| :vert ter<CR>
   nnoremap <leader>V :vs $MYVIMRC<CR>
+  " TODO: not good
   nnoremap <leader>h :wall<CR> \| <C-W>h
   nnoremap <leader>j :wall<CR> \| <C-W>j
   nnoremap <leader>k :wall<CR> \| <C-W>k
   nnoremap <leader>l :wall<CR> \| <C-W>l
 
-  nnoremap <leader>d :LspDefinition<CR>
-  nnoremap <leader>D :LspDeclaration<CR>
-  nnoremap <leader>H :LspHover<CR>
-  nnoremap <leader>r :LspReference<CR>
+  "nnoremap <leader>d :LspDefinition<CR>
+  "nnoremap <leader>D :LspDeclaration<CR>
+  "nnoremap <leader>H :LspHover<CR>
+  "nnoremap <leader>r :LspReference<CR>
 
   nnoremap <leader>n :NERDTree<CR>
   nnoremap <leader>R :NERDTreeRefreshRoot<CR>
@@ -145,9 +150,9 @@ set background=dark
   nnoremap <leader>p :MarkdownPreview<CR>
   nnoremap <leader>P :MarkdownPreviewStop<CR>
   
-  inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-  inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-  inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+  "inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+  "inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+  "inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
 
 " }}}
 
