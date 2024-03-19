@@ -129,10 +129,10 @@ set background=dark
   nnoremap <leader>t :wall \| :term ++rows=15<CR>
   nnoremap <leader>T :wall \| :vert ter<CR>
   nnoremap <leader>V :vs $MYVIMRC<CR>
-  nnoremap <leader>h :wall<CR> \| <C-W>h
-  nnoremap <leader>j :wall<CR> \| <C-W>j
-  nnoremap <leader>k :wall<CR> \| <C-W>k
-  nnoremap <leader>l :wall<CR> \| <C-W>l
+  nnoremap <leader>h <C-W>h \| :wall<CR>
+  nnoremap <leader>j <C-W>j \| :wall<CR> 
+  nnoremap <leader>k <C-W>k \| :wall<CR>
+  nnoremap <leader>l <C-W>l \| :wall<CR>
 
   nnoremap <leader>d :LspDefinition<CR>
   nnoremap <leader>D :LspDeclaration<CR>
