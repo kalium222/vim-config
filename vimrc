@@ -28,6 +28,47 @@ augroup filetype_vim
 augroup END
 
 
+" BASICS ---------------------------------------------------------------- {{{
+
+set nocompatible
+filetype on
+filetype plugin on
+filetype indent on
+syntax on
+
+set nobackup
+set noswapfile
+
+set number
+set shiftwidth=4
+set tabstop=4
+set expandtab
+set cursorline
+" set cursorcolumn
+
+" Do not let cursor scroll below or above N number of lines when scrolling.
+set scrolloff=10
+
+" Do not wrap lines. Allow long lines to extend as far as the line goes.
+set nowrap
+
+set incsearch
+set ignorecase
+set smartcase
+set showmatch
+set hlsearch
+
+set showcmd
+set showmode
+set ruler
+
+set history=100
+
+set clipboard=unnamedplus
+
+" }}}
+
+
 " PLUGINS ---------------------------------------------------------------- {{{
 
 call plug#begin('~/.vim/plugged')
@@ -69,47 +110,6 @@ call plug#begin('~/.vim/plugged')
 
   call plug#end()
    
-" }}}
-
-
-" BASICS ---------------------------------------------------------------- {{{
-
-set nocompatible
-filetype on
-filetype plugin on
-filetype indent on
-syntax on
-
-set nobackup
-set noswapfile
-
-set number
-set shiftwidth=4
-set tabstop=4
-set expandtab
-set cursorline
-" set cursorcolumn
-
-" Do not let cursor scroll below or above N number of lines when scrolling.
-set scrolloff=10
-
-" Do not wrap lines. Allow long lines to extend as far as the line goes.
-set nowrap
-
-set incsearch
-set ignorecase
-set smartcase
-set showmatch
-set hlsearch
-
-set showcmd
-set showmode
-set ruler
-
-set history=100
-
-set clipboard=unnamedplus
-
 " }}}
 
 
