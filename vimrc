@@ -132,9 +132,5 @@ set background=dark
   nnoremap <leader>n :NERDTree<CR>
   nnoremap <leader>R :NERDTreeRefreshRoot<CR>
 
-  " TODO: not good
-  nnoremap <leader>p :MarkdownPreview<CR>
-  nnoremap <leader>P :MarkdownPreviewStop<CR>
-  
 " }}}
 
