@@ -8,3 +8,6 @@ Use [`vim-plug`](https://github.com/junegunn/vim-plug) as plugin manager.
 Use [`vim-lsp`](https://github.com/prabirshrestha/vim-lsp) for lsp support. 
 1. `clangd` for `c/cpp`.
 2. `pylsp` for `python`. Here is the [repo](https://github.com/python-lsp/python-lsp-server).
+
+Quit `vim-lsp`. Now use [`coc.nvim`](https://github.com/neoclide/coc.nvim).
+
