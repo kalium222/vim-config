@@ -94,6 +94,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'jiangmiao/auto-pairs'
   Plug 'preservim/nerdcommenter'
+  Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
   " lsp support and functionality
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
