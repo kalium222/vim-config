@@ -7,4 +7,5 @@
 !.gitignore
 !/plugin_config/
 !README.md
+!coc-settings.json
 
