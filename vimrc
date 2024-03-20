@@ -96,16 +96,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdcommenter'
 
   " lsp support and functionality
-  Plug 'prabirshrestha/vim-lsp'  
-  source ~/.vim/plugin_config/vim-lsp_config.vim
-  Plug 'prabirshrestha/async.vim'
-  Plug 'prabirshrestha/asyncomplete.vim'
-  Plug 'prabirshrestha/asyncomplete-lsp.vim'
-  Plug 'hrsh7th/vim-vsnip'
-  Plug 'hrsh7th/vim-vsnip-integ'
-
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  source ~/.vim/plugin_config/coc.vim
   Plug 'dense-analysis/ale'
-  Plug 'rhysd/vim-lsp-ale'
   source ~/.vim/plugin_config/ALE_config.vim
 
   call plug#end()
@@ -126,28 +119,21 @@ set background=dark
 
   let mapleader = "\<Tab>"
 
+  " TODO: not good
   nnoremap <leader>t :wall \| :term ++rows=15<CR>
   nnoremap <leader>T :wall \| :vert ter<CR>
   nnoremap <leader>V :vs $MYVIMRC<CR>
-  nnoremap <leader>h <C-W>h \| :wall<CR>
-  nnoremap <leader>j <C-W>j \| :wall<CR> 
-  nnoremap <leader>k <C-W>k \| :wall<CR>
-  nnoremap <leader>l <C-W>l \| :wall<CR>
-
-  nnoremap <leader>d :LspDefinition<CR>
-  nnoremap <leader>D :LspDeclaration<CR>
-  nnoremap <leader>H :LspHover<CR>
-  nnoremap <leader>r :LspReference<CR>
+  nnoremap <leader>h  <C-W>h \| :wall<CR>
+  nnoremap <leader>j  <C-W>j \| :wall<CR>
+  nnoremap <leader>k  <C-W>k \| :wall<CR>
+  nnoremap <leader>l  <C-W>l \| :wall<CR>
 
   nnoremap <leader>n :NERDTree<CR>
   nnoremap <leader>R :NERDTreeRefreshRoot<CR>
 
+  " TODO: not good
   nnoremap <leader>p :MarkdownPreview<CR>
   nnoremap <leader>P :MarkdownPreviewStop<CR>
   
-  inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-  inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-  inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
-
 " }}}
 
