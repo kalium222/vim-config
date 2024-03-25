@@ -101,6 +101,8 @@ call plug#begin('~/.vim/plugged')
   source ~/.vim/plugin_config/coc.vim
   Plug 'dense-analysis/ale'
   source ~/.vim/plugin_config/ALE_config.vim
+  Plug 'OmniSharp/omnisharp-vim'
+  source ~/.vim/plugin_config/omnisharp_vim_config.vim
 
   call plug#end()
    
