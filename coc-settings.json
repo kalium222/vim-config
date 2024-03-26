@@ -11,6 +11,11 @@
         "texlab": {
             "command": "/usr/bin/texlab",
             "filetypes": ["tex", "bib", "plaintex", "context"]
+        },
+        "csharp-ls": {
+             "command": "~/.dotnet/tools/csharp-ls",
+             "filetypes": ["cs"],
+             "rootPatterns": ["*.csproj", ".vim/", ".git/", ".hg/"]
         }
     }
 }
