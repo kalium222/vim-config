@@ -10,4 +10,6 @@ Use [`vim-lsp`](https://github.com/prabirshrestha/vim-lsp) for lsp support.
 2. `pylsp` for `python`. Here is the [repo](https://github.com/python-lsp/python-lsp-server).
 
 Quit `vim-lsp`. Now use [`coc.nvim`](https://github.com/neoclide/coc.nvim).
+Use `coc-json`, `coc-pyright`, `coc-sumneko-lua`, `coc-snippets`.
+
 
