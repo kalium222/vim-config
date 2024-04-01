@@ -120,10 +120,9 @@ set background=dark
 
   let mapleader = "\<Tab>"
 
-  " TODO: not good
-  nnoremap <leader>t :wall \| :term ++rows=15<CR>
+  nnoremap <leader>t :wall \| :below ter ++rows=15<CR>
   nnoremap <leader>T :wall \| :vert ter<CR>
-  nnoremap <leader>V :vs $MYVIMRC<CR>
+  inoremap <m-q> <c-\><c-n>
   nnoremap <leader>h  <C-W>h \| :wall<CR>
   nnoremap <leader>j  <C-W>j \| :wall<CR>
   nnoremap <leader>k  <C-W>k \| :wall<CR>
