@@ -8,6 +8,11 @@
             "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
             "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
         },
+        "rust": {
+            "command": "rust-analyzer",
+            "filetypes": ["rust"],
+            "rootPatterns": ["Cargo.toml"]
+        },
         "texlab": {
             "command": "/usr/bin/texlab",
             "filetypes": ["tex", "bib", "plaintex", "context"]
@@ -15,7 +20,7 @@
         "csharp-ls": {
              "command": "~/.dotnet/tools/csharp-ls",
              "filetypes": ["cs"],
-             "rootPatterns": ["*.csproj",  "*.sln", ".vim/", ".git/", ".hg/"]
+             "rootPatterns": ["*.csproj",  "*.sln"]
         }
     }
 }
