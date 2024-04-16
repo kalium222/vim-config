@@ -102,6 +102,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'dense-analysis/ale'
   source ~/.vim/plugin_config/ALE_config.vim
 
+  " fcitx
+  Plug 'lilydjwg/fcitx.vim'
+  set ttm=100
+
   call plug#end()
    
 " }}}
