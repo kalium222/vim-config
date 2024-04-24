@@ -98,7 +98,7 @@ call plug#begin('~/.vim/plugged')
 
   " lsp support and functionality
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  source ~/.vim/plugin_config/coc.vim
+  source ~/.vim/plugin_config/coc_config.vim
   Plug 'dense-analysis/ale'
   source ~/.vim/plugin_config/ALE_config.vim
 
