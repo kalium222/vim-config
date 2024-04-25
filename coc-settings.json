@@ -22,5 +22,6 @@
              "filetypes": ["cs"],
              "rootPatterns": ["*.csproj",  "*.sln"]
         }
-    }
+    },
+    "snippets.ultisnips.pythonPrompt": false
 }
