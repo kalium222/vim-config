@@ -1,10 +1,11 @@
 -- neovim configurations
 
--- Plugin Management
-require('plugins')
 
 -- Basic Config
 require('options')
+
+-- Plugin Management
+require('lazy_plug')
 
 -- Keymap
 require('keymap')

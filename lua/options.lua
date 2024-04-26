@@ -9,10 +9,6 @@ vim.opt.showcmd = true
 vim.opt.showmode = true
 vim.opt.ruler = true
 
-vim.g.grublox_italic = 1
-vim.cmd"colorscheme gruvbox"
-vim.opt.background = "dark"
-
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.expandtab = true
@@ -34,5 +30,9 @@ vim.cmd[[
     filetype indent on
     syntax on
     autocmd TermOpen * startinsert
+]]
+
+vim.cmd[[
+    let mapleader = "\<Tab>"
 ]]
 
