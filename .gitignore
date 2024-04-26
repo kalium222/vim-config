@@ -8,7 +8,7 @@
 !.gitignore
 !/plugin_config/
 !/lua/
-!/lua/plugins/
+!/lua/**
 !README.md
 !coc-settings.json
 
