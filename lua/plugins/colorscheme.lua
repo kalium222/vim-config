@@ -1,4 +1,4 @@
-return {
+local colorscheme = {
     "morhetz/gruvbox",
     config = function ()
         vim.g.gruvbox_italic = 1
@@ -6,3 +6,5 @@ return {
         vim.opt.background = "dark"
     end
 }
+
+return colorscheme
