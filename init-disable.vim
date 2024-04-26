@@ -106,7 +106,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'lilydjwg/fcitx.vim'
   set ttm=100
 
-  call plug#end()
+  Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
+
+call plug#end()
    
 " }}}
 
