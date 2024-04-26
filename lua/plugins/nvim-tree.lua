@@ -17,6 +17,7 @@ local function nvim_tree_conf(bufnr)
     vim.keymap.del('n', 'g?', {buffer = bufnr})
     vim.keymap.set('n', 'i', api.node.open.horizontal, opts('Open: Herizontal'))
     vim.keymap.set('n', 's', api.node.open.vertical, opts('Open: Vertical'))
+    vim.keymap.set('n', 't', api.node.open.tab, opts('Open: Vertical'))
 
 end
 
