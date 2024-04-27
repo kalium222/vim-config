@@ -1,6 +1,9 @@
 local autopairs = {
     'windwp/nvim-autopairs',
-    event = "InsertEnter",
+    event = {
+        "BufNewFile",
+        "BufRead",
+    },
     config = true,
 }
 
