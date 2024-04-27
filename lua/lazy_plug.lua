@@ -19,6 +19,7 @@ require('lazy').setup({
     spec = {
         {import = "plugins.theme"},
         {import = "plugins.editor-extensions"},
+        {import = "plugins.git-integration"},
     }
 })
 
