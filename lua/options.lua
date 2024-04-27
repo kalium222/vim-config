@@ -8,7 +8,6 @@ vim.opt.wrap = false
 vim.opt.showcmd = true
 vim.opt.showmode = true
 vim.opt.ruler = true
--- vim.g.guicursor = 'n-v-c-sm:block,i-ci-ve:hor25,r-cr-o:ver20'
 vim.cmd[[set guicursor=n-v-c-sm:block,i-ci-ve:hor20,r-cr-o:hor50]]
 
 vim.opt.shiftwidth = 4
