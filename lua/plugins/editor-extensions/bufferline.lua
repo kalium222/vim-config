@@ -6,7 +6,15 @@ local bufferline = {
             mode = "tabs",
             indicator = {
                 style = "underline"
-            }
+            },
+            offsets = {
+                {
+                    filetype = "NvimTree",
+                    text = "NvimTree",
+                    text_align = "left",
+                    separator = true,
+                }
+            },
         }
     }
 }
