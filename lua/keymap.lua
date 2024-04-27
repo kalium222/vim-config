@@ -19,3 +19,5 @@ vim.keymap.set('n', '<Leader>n', '<cmd>tabn<CR>', opts)
 vim.keymap.set('n', '<Leader>\\', '<cmd>NvimTreeToggle<CR>', opts)
 vim.keymap.set('n', '<Leader>|', '<cmd>NvimTreeFocus<CR>', opts)
 
+vim.keymap.set('n', '<Leader>m', '<cmd>MarkdownPreviewToggle<CR>', opts)
+
