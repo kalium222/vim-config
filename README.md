@@ -13,3 +13,13 @@ Quit `vim-lsp`. Now use [`coc.nvim`](https://github.com/neoclide/coc.nvim).
 Use `coc-json`, `coc-pyright`, `coc-sumneko-lua`, `coc-snippets`.
 
 
+# NeoVim Now!
+
+Quit vim. Move to Neovim now, with 
+
+## Problems
+
+1. todo-comment.nvim doesn't show highlight.
+2. dashboard, let the content stay at center.
+3. csharp-ls is very slow.
+
