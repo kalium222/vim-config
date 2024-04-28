@@ -10,3 +10,6 @@ require('lazy_plug')
 -- Keymap
 require('keymap')
 
+-- Lsp
+require('lsp-options')
+
