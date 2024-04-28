@@ -22,15 +22,31 @@ vim.keymap.set('n', '<Leader>|', '<cmd>NvimTreeFocus<CR>', opts)
 vim.keymap.set('n', '<Leader>m', '<cmd>MarkdownPreviewToggle<CR>', opts)
 
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+vim.keymap.set('n', 'Tf', builtin.find_files, opts)
+vim.keymap.set('n', 'Tg', builtin.live_grep, opts)
+vim.keymap.set('n', 'Tb', builtin.buffers, opts)
+vim.keymap.set('n', 'Th', builtin.help_tags, opts)
 
-vim.keymap.set('n', '<Leader>gd', vim.lsp.buf.definition, {})
-vim.keymap.set('n', '<Leader>gD', vim.lsp.buf.declaration, {})
-vim.keymap.set('n', '<Leader>gi', vim.lsp.buf.implementation, {})
-vim.keymap.set('n', '<Leader>gr', vim.lsp.buf.references, {})
-vim.keymap.set('n', '<Leader>rn', vim.lsp.buf.rename, {})
-vim.keymap.set('n', '<Leader>K', vim.lsp.buf.hover, {})
+-- lsp feat
+--
+-- definition
+vim.keymap.set('n', '<Leader>gd', '<cmd>Lspsaga goto_definition<CR>', opts)
+vim.keymap.set('n', '<Leader>pd', '<cmd>Lspsaga peek_definition<CR>', opts)
+-- type definition
+vim.keymap.set('n', '<Leader>gt', '<cmd>Lspsaga goto_type_definition<CR>', opts)
+vim.keymap.set('n', '<Leader>pt', '<cmd>Lspsaga peek_type_definition<CR>', opts)
+-- goto other places: declaration, implementation
+vim.keymap.set('n', '<Leader>gD', vim.lsp.buf.declaration, opts)
+vim.keymap.set('n', '<Leader>gi', vim.lsp.buf.implementation, opts)
+-- references
+vim.keymap.set('n', '<Leader>gr', '<cmd>Lspsaga finder<CR>')
+-- rename
+vim.keymap.set('n', '<Leader>rn', '<cmd>Lspsaga rename<CR>', opts)
+-- hover
+vim.keymap.set('n', '<Leader>K', '<cmd>Lspsaga hover_doc<CR>')
+-- diagnostic info
+vim.keymap.set('n', '<Leader>g[', '<cmd>Lspsaga diagnostic_jump_prev<CR>')
+vim.keymap.set('n', '<Leader>g]', '<cmd>Lspsaga diagnostic_jump_next<CR>')
+-- code action
+vim.keymap.set('n', '<Leader>pa', '<cmd>Lspsaga code_action<CR>')
 

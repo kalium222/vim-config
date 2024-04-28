@@ -24,7 +24,7 @@ vim.opt.relativenumber = true
 vim.opt.scrolloff = 10
 
 vim.opt.cursorline = true
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "75"
 vim.opt.showmatch = true
 vim.opt.wrap = false
 vim.opt.showcmd = true
