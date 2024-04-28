@@ -50,3 +50,6 @@ vim.keymap.set('n', '<Leader>g]', '<cmd>Lspsaga diagnostic_jump_next<CR>')
 -- code action
 vim.keymap.set('n', '<Leader>pa', '<cmd>Lspsaga code_action<CR>')
 
+-- flaot terminal from Lspsaga
+vim.keymap.set('n', '<Leader>t', '<cmd>Lspsaga term_toggle<CR>')
+
