@@ -27,3 +27,10 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
+vim.keymap.set('n', '<Leader>gd', vim.lsp.buf.definition, {})
+vim.keymap.set('n', '<Leader>gD', vim.lsp.buf.declaration, {})
+vim.keymap.set('n', '<Leader>gi', vim.lsp.buf.implementation, {})
+vim.keymap.set('n', '<Leader>gr', vim.lsp.buf.references, {})
+vim.keymap.set('n', '<Leader>rn', vim.lsp.buf.rename, {})
+vim.keymap.set('n', '<Leader>K', vim.lsp.buf.hover, {})
+
