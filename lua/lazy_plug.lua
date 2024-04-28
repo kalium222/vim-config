@@ -20,6 +20,8 @@ require('lazy').setup({
         {import = "plugins.theme"},
         {import = "plugins.editor-extensions"},
         {import = "plugins.git-integration"},
+        {import = "plugins.lsp"},
+        {import = "plugins.lsp-conf"},
     }
 })
 
