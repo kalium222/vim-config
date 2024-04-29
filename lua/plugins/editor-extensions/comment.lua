@@ -11,8 +11,7 @@ local comment = {
             extra = false
         },
     },
-    lazy = true,
-    event = "BufWinEnter",
 }
 
 return comment
+

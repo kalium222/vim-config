@@ -1,7 +1,7 @@
 local toggleterm = {
     'akinsho/toggleterm.nvim',
     lazy = true,
-    event = "VimEnter",
+    event = "VeryLazy",
     opts = {
         open_mapping = [[<C- >]],
     },
