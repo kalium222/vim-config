@@ -25,6 +25,7 @@ vim.opt.scrolloff = 10
 
 vim.opt.cursorline = true
 vim.opt.colorcolumn = "75"
+vim.opt.signcolumn = "yes"
 vim.opt.showmatch = true
 vim.opt.wrap = false
 vim.opt.showcmd = true

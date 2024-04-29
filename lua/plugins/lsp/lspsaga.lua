@@ -7,6 +7,11 @@ local lspsaga = {
         'nvim-tree/nvim-web-devicons',     -- optional
     },
     config = true,
+    opts = {
+        code_action = {
+            extend_gitsigns = true,
+        },
+    },
 }
 
 return lspsaga
