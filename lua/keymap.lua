@@ -21,12 +21,6 @@ vim.keymap.set('n', '<Leader>|', '<cmd>NvimTreeFocus<CR>', opts)
 
 vim.keymap.set('n', '<Leader>m', '<cmd>MarkdownPreviewToggle<CR>', opts)
 
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', 'Tf', builtin.find_files, opts)
-vim.keymap.set('n', 'Tg', builtin.live_grep, opts)
-vim.keymap.set('n', 'Tb', builtin.buffers, opts)
-vim.keymap.set('n', 'Th', builtin.help_tags, opts)
-
 -- lsp feat
 --
 -- definition
