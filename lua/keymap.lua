@@ -13,8 +13,8 @@ vim.keymap.set('n', '<Leader>j', [[<C-w>j | :wall<CR>]], opts)
 vim.keymap.set('n', '<Leader>k', [[<C-w>k | :wall<CR>]], opts)
 vim.keymap.set('n', '<Leader>l', [[<C-w>l | :wall<CR>]], opts)
 
-vim.keymap.set('n', '<Leader>-', '<cmd>tabp<CR>', opts)
-vim.keymap.set('n', '<Leader>=', '<cmd>tabn<CR>', opts)
+vim.keymap.set('n', '<Leader>-', '<cmd>tabp<CR> | <cmd>wall<cr>', opts)
+vim.keymap.set('n', '<Leader>=', '<cmd>tabn<CR> | <cmd>wall<cr>', opts)
 
 vim.keymap.set('n', '<Leader>\\', '<cmd>NvimTreeToggle<CR>', opts)
 vim.keymap.set('n', '<Leader>|', '<cmd>NvimTreeFocus<CR>', opts)
@@ -45,5 +45,5 @@ vim.keymap.set('n', '<Leader>g]', '<cmd>Lspsaga diagnostic_jump_next<CR>')
 vim.keymap.set('n', '<Leader>pa', '<cmd>Lspsaga code_action<CR>')
 
 -- flaot terminal from Lspsaga
-vim.keymap.set('n', '<Leader>t', '<cmd>Lspsaga term_toggle<CR>')
+vim.keymap.set('n', '<Leader>t', [[:wall<CR> | :Lspsaga term_toggle<CR>]])
 

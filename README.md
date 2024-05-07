@@ -23,4 +23,3 @@ Use [`vim-lsp`](https://github.com/prabirshrestha/vim-lsp) for lsp support.
 Quit `vim-lsp`. Now use [`coc.nvim`](https://github.com/neoclide/coc.nvim).
 Use `coc-json`, `coc-pyright`, `coc-sumneko-lua`, `coc-snippets`.
 
-
