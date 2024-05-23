@@ -40,6 +40,7 @@ vim.cmd[[
     filetype indent on
     syntax on
     autocmd TermOpen * startinsert
+    set nomodeline
 ]]
 
 vim.cmd[[
