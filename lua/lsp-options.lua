@@ -46,3 +46,5 @@ vim.cmd[[
     sign define DiagnosticSignHint text=🤨 texthl=DiagnosticSignHint linehl= numhl=
 ]]
 
+vim.cmd[[highlight @variable.python guifg=#AAAAAA]]
+
