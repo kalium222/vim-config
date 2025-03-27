@@ -1,18 +1,8 @@
 # NeoVim Now!
 
 Quit vim. Move to Neovim now, with [lazy.nvim](https://github.com/folke/lazy.nvim)
- as plugin manager.
+as plugin manager.
 
-## Problems
-
-2. dashboard, let the content stay at center.
-3. csharp-ls is very slow.
-
-
-# Vim config
-
-This is a personal vim config. Just put all the things in the `~/.vim`.
-Use [`vim-plug`](https://github.com/junegunn/vim-plug) as plugin manager.
 
 ## lsp
 
@@ -22,4 +12,4 @@ Use [`vim-lsp`](https://github.com/prabirshrestha/vim-lsp) for lsp support.
 
 Quit `vim-lsp`. Now use [`coc.nvim`](https://github.com/neoclide/coc.nvim).
 Use `coc-json`, `coc-pyright`, `coc-sumneko-lua`, `coc-snippets`.
-
+Quit 'coc', now directly use `nvim.lspconfig`.
