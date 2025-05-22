@@ -20,7 +20,7 @@ vim.opt.history = 50
 vim.opt.clipboard = 'unnamedplus'
 
 vim.opt.number = true
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 vim.opt.scrolloff = 10
 
 vim.opt.cursorline = true
