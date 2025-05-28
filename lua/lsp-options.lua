@@ -47,4 +47,5 @@ vim.cmd[[
 ]]
 
 vim.cmd[[highlight @variable.python guifg=#AAAAAA]]
-
+vim.cmd[[highlight cConditional guifg=#FF8800]]
+vim.lsp.inlay_hint.enable(true, nil)
