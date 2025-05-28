@@ -1,8 +1,8 @@
 -- Basic Config
 
 -- tab
-vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
 -- search
@@ -43,7 +43,4 @@ vim.cmd[[
     set nomodeline
 ]]
 
-vim.cmd[[
-    let mapleader = "\<Tab>"
-]]
-
+vim.g.mapleader = "\t"
