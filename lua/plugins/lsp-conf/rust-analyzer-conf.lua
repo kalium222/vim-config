@@ -1,10 +1,14 @@
 -- rust_analyzer
 
-require('lspconfig').rust_analyzer.setup {
-    capabilities = require('cmp_nvim_lsp').default_capabilities(),
-    settings = {
-        ['rust_analyzer'] = {},
+vim.lsp.enable('rust_analyzer')
+vim.lsp.config('rust_analyzer', {
+  settings = {
+    ['rust-analyzer'] = {
+      diagnostics = {
+        enable = false;
+      }
     }
-}
+  }
+})
 
 return {}

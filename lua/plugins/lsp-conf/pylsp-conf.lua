@@ -1,6 +1,7 @@
 -- pylsp
-require'lspconfig'.pylsp.setup{
-  capabilities = require('cmp_nvim_lsp').default_capabilities(),
+
+vim.lsp.enable('pylsp')
+vim.lsp.config('pylsp', {
   settings = {
     pylsp = {
       plugins = {
@@ -11,7 +12,6 @@ require'lspconfig'.pylsp.setup{
       }
     }
   }
-}
+})
 
 return {}
-
