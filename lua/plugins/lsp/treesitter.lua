@@ -1,6 +1,6 @@
 local treesitter = {
     "nvim-treesitter/nvim-treesitter",
-    event = "VeryLazy",
+    lazy = false,
 }
 
 return treesitter
