@@ -11,10 +11,9 @@ for name, sign in pairs(signs) do
   vim.fn.sign_define("DiagnosticSign" .. name, sign)
 end
 
+-- modify some ugly colour group
 vim.api.nvim_set_hl(0, '@variable.python', { fg = '#AAAAAA' })
 vim.api.nvim_set_hl(0, 'cConditional', { fg = '#FF8800' })
 
+-- enable inlay_hint
 vim.lsp.inlay_hint.enable(true, nil)
-
-vim.wo.foldmethod = 'expr'
-vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
