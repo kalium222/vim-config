@@ -2,12 +2,12 @@
 
 -- get treesitter plugin
 require('nvim-treesitter').install({
-    'haskell',
+    'haskell', 'python'
 })
 
 -- highlighting
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = { 'c', 'lua', 'haskell' },
+  pattern = { 'c', 'lua', 'python', 'haskell' },
   callback = function() vim.treesitter.start() end,
 })
 
