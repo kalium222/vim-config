@@ -5,6 +5,7 @@ local surround = {
         "BufNewFile",
         "BufRead",
     },
+    opts = {},
 }
 
 return surround
