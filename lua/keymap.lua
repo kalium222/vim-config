@@ -45,6 +45,11 @@ local mappings = {
     { mode = 'n', lhs = '<Leader>pa', rhs = '<cmd>Lspsaga code_action<CR>' },
     -- Lspsaga float terminal
     { mode = 'n', lhs = '<Leader>t', rhs = [[:wall<CR> | :Lspsaga term_toggle<CR>]] },
+    -- Telescope
+    { mode = 'n', lhs = '<Leader>ff', rhs = '<cmd>Telescope find_files<CR>', opts = opts },
+    { mode = 'n', lhs = '<Leader>fg', rhs = '<cmd>Telescope live_grep<CR>', opts = opts },
+    { mode = 'n', lhs = '<Leader>fb', rhs = '<cmd>Telescope buffers<CR>', opts = opts },
+    { mode = 'n', lhs = '<Leader>fh', rhs = '<cmd>Telescope help_tags<CR>', opts = opts },
 }
 
 for _, map in ipairs(mappings) do

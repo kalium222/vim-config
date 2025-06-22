@@ -5,7 +5,7 @@ local toggleterm = {
     opts = {
         size = 25,
         open_mapping = [[<C- >]],
-        on_open = function (t)
+        on_open = function (_)
             vim.cmd[[wall]]
         end;
         shade_terminals = true,
@@ -14,4 +14,3 @@ local toggleterm = {
 }
 
 return toggleterm
-
