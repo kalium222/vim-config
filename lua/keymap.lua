@@ -54,6 +54,7 @@ local mappings = {
     { mode = 'n', lhs = '<Leader>ti', rhs = '<cmd>ToggleTerm direction=horizontal<CR>', opts = opts },
     { mode = 'n', lhs = '<Leader>tv', rhs = '<cmd>ToggleTerm direction=vertical<CR>',   opts = opts },
     { mode = 'n', lhs = '<Leader>tf', rhs = '<cmd>ToggleTerm direction=float<CR>',      opts = opts },
+    { mode = 'n', lhs = '<Leader>tt', rhs = '<cmd>ToggleTerm direction=tab<CR>',        opts = opts },
 }
 
 for _, map in ipairs(mappings) do

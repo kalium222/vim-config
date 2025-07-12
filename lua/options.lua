@@ -20,7 +20,7 @@ vim.opt.history = 50
 vim.opt.clipboard = 'unnamedplus'
 
 vim.opt.number = true
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 vim.opt.scrolloff = 10
 
 vim.opt.cursorline = true
@@ -32,9 +32,9 @@ vim.opt.showcmd = true
 vim.opt.showmode = true
 vim.opt.ruler = true
 
-vim.cmd[[set guicursor=n-v-c-sm:block,i-ci-ve:hor20,r-cr-o:hor50]]
+vim.cmd [[set guicursor=n-v-c-sm:block,i-ci-ve:hor20,r-cr-o:hor50]]
 
-vim.cmd[[
+vim.cmd [[
     filetype on
     filetype plugin on
     filetype indent on
