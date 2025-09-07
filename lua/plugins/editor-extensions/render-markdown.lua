@@ -5,6 +5,7 @@ local render_markdown = {
     -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-mini/mini.icons' }, -- if you use standalone mini plugins
     ---@module 'render-markdown'
     ---@type render.md.UserConfig
+    ft = { "markdown" },
     opts = {
         -- from https://github.com/patricorgi/dotfiles/
         callout = {
