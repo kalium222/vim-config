@@ -3,11 +3,7 @@
 
 # Include
 !*.lua
-!vimrc
-!*.vim
 !.gitignore
-!/plugin_config/
 !/lua/
 !/lua/**
 !README.md
-!coc-settings.json

@@ -21,7 +21,7 @@ local mappings = {
     { mode = 'n', lhs = '<Leader>\\', rhs = '<cmd>NvimTreeToggle<CR>',                  opts = opts },
     { mode = 'n', lhs = '<Leader>|',  rhs = '<cmd>NvimTreeFocus<CR>',                   opts = opts },
     -- markdown preview
-    { mode = 'n', lhs = '<Leader>m',  rhs = '<cmd>MarkdownPreviewToggle<CR>',           opts = opts },
+    { mode = 'n', lhs = '<Leader>m',  rhs = '<cmd>RenderMarkdown buf_toggle<CR>',       opts = opts },
     -- Lspsaga
     -- definition
     { mode = 'n', lhs = '<Leader>gd', rhs = '<cmd>Lspsaga goto_definition<CR>',         opts = opts },
