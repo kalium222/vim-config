@@ -20,3 +20,4 @@ And there are many default config in `lspconfig.nvim` plugin. Just use it.
 | rust | rust-analyzer |
 | shell | sh_lsp |
 | latex | texlab |
+| java | jdtls |
