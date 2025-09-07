@@ -32,6 +32,8 @@ local mappings = {
     -- goto other places: declaration, implementation
     { mode = 'n', lhs = '<Leader>gD', rhs = vim.lsp.buf.declaration,                    opts = opts },
     { mode = 'n', lhs = '<Leader>gi', rhs = vim.lsp.buf.implementation,                 opts = opts },
+    -- lsp format
+    { mode = 'n', lhs = '<Leader>F',  rhs = vim.lsp.buf.format,                         opts = opts },
     -- references
     { mode = 'n', lhs = '<Leader>gr', rhs = '<cmd>Lspsaga finder<CR>' },
     -- rename
