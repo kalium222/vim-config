@@ -12,7 +12,7 @@ And there are many default config in `lspconfig.nvim` plugin. Just use it.
 | language | lsp |
 | --- | --- |
 | c/cpp | clangd |
-| python | pylsp |
+| python | pyright & ruff |
 | lua | lua_ls |
 | csharp | csharp_ls |
 | go | gopls |
