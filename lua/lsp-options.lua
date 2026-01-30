@@ -17,6 +17,7 @@ end
 vim.api.nvim_set_hl(0, '@variable.python', { fg = '#AAAAAA' })
 vim.api.nvim_set_hl(0, 'cConditional', { fg = '#FF8800' })
 vim.api.nvim_set_hl(0, '@lsp.type.field.cs', { fg = '#AAAAAA' })
+vim.api.nvim_set_hl(0, '@lsp.type.delegate.cs', { fg = '#d1d121' })
 
 -- enable inlay_hint
 vim.lsp.inlay_hint.enable(true, nil)
