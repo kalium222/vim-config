@@ -14,7 +14,7 @@ And there are many default config in `lspconfig.nvim` plugin. Just use it.
 | c/cpp | clangd |
 | python | pyright & ruff |
 | lua | lua_ls |
-| csharp | csharp_ls |
+| csharp | roslyn_ls |
 | go | gopls |
 | haskell | hls |
 | rust | rust-analyzer |

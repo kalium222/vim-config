@@ -12,6 +12,7 @@ vim.opt.smartcase = true
 vim.opt.hlsearch = true
 
 -- backup file
+vim.opt.autoread = true
 vim.opt.backup = false
 vim.opt.swapfile = false
 
@@ -31,10 +32,12 @@ vim.opt.wrap = false
 vim.opt.showcmd = true
 vim.opt.showmode = true
 vim.opt.ruler = true
-
-vim.o.winborder = 'rounded'
-
-vim.cmd [[set guicursor=n-v-c-sm:block,i-ci-ve:hor20,r-cr-o:hor50]]
+vim.opt.winborder = 'rounded'
+vim.opt.guicursor = {
+    'n-v-c-sm:block',
+    'i-ci-ve:hor20',
+    'r-cr-o:hor50',
+}
 
 vim.cmd [[
     filetype on
