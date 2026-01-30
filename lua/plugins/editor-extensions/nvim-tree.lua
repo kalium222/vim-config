@@ -22,7 +22,12 @@ local nvim_tree = {
     lazy = false,
     dependencies = {"nvim-tree/nvim-web-devicons"},
     opts = {
-        on_attach = nvim_tree_custom_conf
+        on_attach = nvim_tree_custom_conf,
+        filesystem_watchers = {
+            ignore_dirs = {
+                "Temp", "obj", "Library", "Logs"
+            }
+        }
     }
 }
 
