@@ -5,7 +5,7 @@
 
 local opts = {
     noremap = true,
-    silent = false
+    silent = true
 }
 
 local mappings = {
