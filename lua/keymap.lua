@@ -10,10 +10,10 @@ local opts = {
 
 local mappings = {
     -- windows jump
-    { mode = 'n', lhs = '<Leader>h',  rhs = [[<C-w>h | :wall<CR>]],                     opts = opts },
-    { mode = 'n', lhs = '<Leader>j',  rhs = [[<C-w>j | :wall<CR>]],                     opts = opts },
-    { mode = 'n', lhs = '<Leader>k',  rhs = [[<C-w>k | :wall<CR>]],                     opts = opts },
-    { mode = 'n', lhs = '<Leader>l',  rhs = [[<C-w>l | :wall<CR>]],                     opts = opts },
+    { mode = 'n', lhs = '<Leader>h',  rhs = [[<C-w>h | <cmd>wall<CR>]],                     opts = opts },
+    { mode = 'n', lhs = '<Leader>j',  rhs = [[<C-w>j | <cmd>wall<CR>]],                     opts = opts },
+    { mode = 'n', lhs = '<Leader>k',  rhs = [[<C-w>k | <cmd>wall<CR>]],                     opts = opts },
+    { mode = 'n', lhs = '<Leader>l',  rhs = [[<C-w>l | <cmd>wall<CR>]],                     opts = opts },
     -- tab page jump
     { mode = 'n', lhs = '<Leader>-',  rhs = '<cmd>tabp<CR> | <cmd>wall<CR>',            opts = opts },
     { mode = 'n', lhs = '<Leader>=',  rhs = '<cmd>tabn<CR> | <cmd>wall<CR>',            opts = opts },
@@ -27,7 +27,7 @@ local mappings = {
     -- references
     { mode = 'n', lhs = 'gr',         rhs = '<cmd>Lspsaga finder<CR>',                  opts = opts },
     -- lsp format
-    { mode = 'n', lhs = '<Leader>F',          rhs = vim.lsp.buf.format,                         opts = opts },
+    { mode = 'n', lhs = '<Leader>F',  rhs = vim.lsp.buf.format,                         opts = opts },
     -- rename
     { mode = 'n', lhs = '<Leader>rn', rhs = '<cmd>Lspsaga rename<CR>',                  opts = opts },
     -- hover
@@ -45,6 +45,10 @@ local mappings = {
     { mode = 'n', lhs = '<Leader>tv', rhs = '<cmd>ToggleTerm direction=vertical<CR>',   opts = opts },
     { mode = 'n', lhs = '<Leader>tf', rhs = '<cmd>ToggleTerm direction=float<CR>',      opts = opts },
     { mode = 'n', lhs = '<Leader>tt', rhs = '<cmd>ToggleTerm direction=tab<CR>',        opts = opts },
+    -- others
+    { mode = 'n', lhs = '<Leader>,',  rhs = '<cmd>pop<CR>',                             opts = opts },
+    { mode = 'n', lhs = '<Leader>.',  rhs = '<cmd>tag<CR>',                             opts = opts },
+    { mode = 'n', lhs = '<C-t>',      rhs = '<Nop>',                                    opts = opts },
 }
 
 for _, map in ipairs(mappings) do
