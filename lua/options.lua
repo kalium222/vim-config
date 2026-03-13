@@ -46,7 +46,6 @@ vim.cmd [[
     syntax on
     autocmd TermOpen * startinsert
     set nomodeline
-    colo retrobox
 ]]
 
 vim.g.mapleader = "\t"

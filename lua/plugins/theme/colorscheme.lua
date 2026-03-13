@@ -26,12 +26,12 @@
 --     end
 -- }
 
-local tokyonight = {
-    "folke/tokyonight.nvim",
-    config = function ()
-        vim.cmd[[colorscheme tokyonight-night]]
-    end
-}
+-- local tokyonight = {
+--     "folke/tokyonight.nvim",
+--     config = function ()
+--         vim.cmd[[colorscheme tokyonight-night]]
+--     end
+-- }
 
 -- local sonokai = {
 --     "sainnhe/sonokai",
@@ -42,4 +42,11 @@ local tokyonight = {
 --     end
 -- }
 
-return tokyonight
+local kanagawa = {
+    "rebelot/kanagawa.nvim",
+    config = function ()
+        vim.cmd[[colorscheme kanagawa-wave]]
+    end
+}
+
+return kanagawa
