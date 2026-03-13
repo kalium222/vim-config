@@ -8,7 +8,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     if vim.v.shell_error ~= 0 then
         vim.api.nvim_echo({
             { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-            { out, "WarningMsg" },
+            { out,                            "WarningMsg" },
             { "\nPress any key to exit..." },
         }, true, {})
         vim.fn.getchar()
@@ -20,12 +20,14 @@ vim.opt.rtp:prepend(lazypath)
 -- load plugins from lua/plugins
 require('lazy').setup({
     spec = {
-        {import = "plugins.theme"},
-        {import = "plugins.editor-extensions"},
-        {import = "plugins.git-integration"},
-        {import = "plugins.lsp"},
-        {import = "plugins.lsp-conf"},
+        { import = "plugins.theme" },
+        { import = "plugins.editor-extensions" },
+        { import = "plugins.git-integration" },
+        { import = "plugins.lsp" },
+        { import = "plugins.lsp-conf" },
     },
     checker = { enable = true },
+    rocks = {
+        enabled = false
+    }
 })
-
