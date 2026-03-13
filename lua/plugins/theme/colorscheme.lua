@@ -26,12 +26,12 @@
 --     end
 -- }
 
--- local tokyonight = {
---     "folke/tokyonight.nvim",
---     config = function ()
---         vim.cmd[[colorscheme tokyonight-night]]
---     end
--- }
+local tokyonight = {
+    "folke/tokyonight.nvim",
+    config = function ()
+        vim.cmd[[colorscheme tokyonight-night]]
+    end
+}
 
 -- local sonokai = {
 --     "sainnhe/sonokai",
@@ -42,5 +42,4 @@
 --     end
 -- }
 
-return {}
-
+return tokyonight
