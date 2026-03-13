@@ -5,7 +5,7 @@ local lualine = {
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     opts = {
         options = {
-            theme = "gruvbox"
+            theme = "auto"
         }
     }
 }
