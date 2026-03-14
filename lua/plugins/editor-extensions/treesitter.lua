@@ -33,7 +33,7 @@ local treesitter_master = {
     -- },
     config = function()
         require('nvim-treesitter.configs').setup({
-            ensure_installed = { 'c', 'lua', 'python', 'haskell' },
+            ensure_installed = { 'python', 'haskell', 'c_sharp' },
             highlight = { enable = true },
         })
     end
