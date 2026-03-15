@@ -24,19 +24,13 @@ local treesitter_master = {
     branch = "master",
     lazy = false,
     build = ":TSUpdate",
-    -- WARN: ? opts doesn't work for render-markdown.nvim
-    -- opts = {
-    --     ensure_installed = { 'c', 'lua', 'python', 'haskell' },
-    --     highlight = {
-    --         enable = true,
-    --     },
-    -- },
-    config = function()
-        require('nvim-treesitter.configs').setup({
-            ensure_installed = { 'python', 'haskell', 'c_sharp' },
-            highlight = { enable = true },
-        })
-    end
+    main = 'nvim-treesitter.configs',
+    opts = {
+        ensure_installed = { 'python', 'haskell', 'c_sharp', 'gdscript' },
+        highlight = {
+            enable = true,
+        },
+    },
 }
 
 return treesitter_master

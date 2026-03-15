@@ -8,4 +8,3 @@ local lspconfig = {
 }
 
 return lspconfig
-

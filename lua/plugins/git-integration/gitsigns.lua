@@ -52,4 +52,3 @@ local gitsigns = {
 }
 
 return gitsigns
-
