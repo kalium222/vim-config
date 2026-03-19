@@ -10,10 +10,10 @@ local opts = {
 
 local mappings = {
     -- windows jump
-    { mode = 'n', lhs = '<Leader>h',  rhs = [[<C-w>h | <cmd>wall<CR>]],                     opts = opts },
-    { mode = 'n', lhs = '<Leader>j',  rhs = [[<C-w>j | <cmd>wall<CR>]],                     opts = opts },
-    { mode = 'n', lhs = '<Leader>k',  rhs = [[<C-w>k | <cmd>wall<CR>]],                     opts = opts },
-    { mode = 'n', lhs = '<Leader>l',  rhs = [[<C-w>l | <cmd>wall<CR>]],                     opts = opts },
+    { mode = 'n', lhs = '<Leader>h',  rhs = [[<C-w>h | <cmd>wall<CR>]],                 opts = opts },
+    { mode = 'n', lhs = '<Leader>j',  rhs = [[<C-w>j | <cmd>wall<CR>]],                 opts = opts },
+    { mode = 'n', lhs = '<Leader>k',  rhs = [[<C-w>k | <cmd>wall<CR>]],                 opts = opts },
+    { mode = 'n', lhs = '<Leader>l',  rhs = [[<C-w>l | <cmd>wall<CR>]],                 opts = opts },
     -- tab page jump
     { mode = 'n', lhs = '<Leader>-',  rhs = '<cmd>tabp<CR> | <cmd>wall<CR>',            opts = opts },
     { mode = 'n', lhs = '<Leader>=',  rhs = '<cmd>tabn<CR> | <cmd>wall<CR>',            opts = opts },
@@ -23,7 +23,7 @@ local mappings = {
     -- Lspsaga
     -- definition
     { mode = 'n', lhs = 'gd',         rhs = '<cmd>Lspsaga goto_definition<CR>',         opts = opts },
-    { mode = 'n', lhs = 'gt',         rhs = '<cmd>Lspsaga goto_type_definition<CR>',    opts = opts },
+    { mode = 'n', lhs = '<Leader>gd', rhs = '<cmd>Lspsaga goto_type_definition<CR>',    opts = opts },
     -- references
     { mode = 'n', lhs = 'gr',         rhs = '<cmd>Lspsaga finder<CR>',                  opts = opts },
     -- lsp format
@@ -35,6 +35,8 @@ local mappings = {
     -- diagnostic info
     { mode = 'n', lhs = '<Leader>d',  rhs = '<cmd>Lspsaga show_line_diagnostics<CR>',   opts = opts },
     { mode = 'n', lhs = '<Leader>D',  rhs = '<cmd>Lspsaga show_buf_diagnostics<CR>',    opts = opts },
+    -- code action
+    { mode = 'n', lhs = '<Leader>c',  rhs = '<cmd>Lspsaga code_action<CR>',             opts = opts },
     -- Telescope
     { mode = 'n', lhs = '<Leader>ff', rhs = '<cmd>Telescope find_files<CR>',            opts = opts },
     { mode = 'n', lhs = '<Leader>fg', rhs = '<cmd>Telescope live_grep<CR>',             opts = opts },
