@@ -7,7 +7,7 @@ vim.lsp.config('hls', {
       cabalFormattingProvider = "cabalfmt",
       formattingProvider = "ormolu",
       plugin = {
-        rename = { config = { crossModule = true }}
+        rename = { config = { crossModule = true } }
       },
     },
   },

@@ -34,9 +34,9 @@ vim.opt.showmode = true
 vim.opt.ruler = true
 vim.opt.winborder = 'rounded'
 vim.opt.guicursor = {
-    'n-v-c-sm:block',
-    'i-ci-ve:hor20',
-    'r-cr-o:hor50',
+  'n-v-c-sm:block',
+  'i-ci-ve:hor20',
+  'r-cr-o:hor50',
 }
 
 vim.cmd [[
