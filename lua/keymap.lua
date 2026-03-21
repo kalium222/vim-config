@@ -23,7 +23,7 @@ local mappings = {
   -- Lspsaga
   -- definition
   { mode = 'n', lhs = 'gd',         rhs = '<cmd>Lspsaga goto_definition<CR>',         opts = opts },
-  { mode = 'n', lhs = '<Leader>gd', rhs = '<cmd>Lspsaga goto_type_definition<CR>',    opts = opts },
+  { mode = 'n', lhs = 'gt',         rhs = '<cmd>Lspsaga goto_type_definition<CR>',    opts = opts },
   -- references
   { mode = 'n', lhs = 'gr',         rhs = '<cmd>Lspsaga finder<CR>',                  opts = opts },
   -- lsp format
