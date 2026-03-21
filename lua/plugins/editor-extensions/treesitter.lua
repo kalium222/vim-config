@@ -26,7 +26,13 @@ local treesitter_master = {
   build = ":TSUpdate",
   main = 'nvim-treesitter.configs',
   opts = {
-    ensure_installed = { 'python', 'haskell', 'c_sharp', 'gdscript' },
+    ensure_installed = {
+      'cpp',
+      'python',
+      'haskell',
+      'c_sharp',
+      'gdscript'
+    },
     highlight = {
       enable = true,
     },
