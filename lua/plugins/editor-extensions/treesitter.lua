@@ -13,7 +13,7 @@ local treesitter_main = {
     })
     --- for treesitter highlighting
     vim.api.nvim_create_autocmd('FileType', {
-      pattern = { 'c', 'lua', 'python', 'haskell' },
+      pattern = { 'c', 'lua', 'python', 'haskell', 'qmljs' },
       callback = function() vim.treesitter.start() end,
     })
   end,
@@ -31,7 +31,8 @@ local treesitter_master = {
       'python',
       'haskell',
       'c_sharp',
-      'gdscript'
+      'gdscript',
+      'qmljs'
     },
     highlight = {
       enable = true,

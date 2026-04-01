@@ -1,10 +1,11 @@
 local colorizer = {
   "norcalli/nvim-colorizer.lua",
   lazy = true,
-  ft = { "css" },
+  ft = { "css", "qml" },
   config = true,
   opts = {
     'css',
+    'qml',
     css = {
       rgb_fn = true,
     },
