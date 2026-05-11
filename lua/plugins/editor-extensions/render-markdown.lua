@@ -1,10 +1,6 @@
 local render_markdown = {
   'MeanderingProgrammer/render-markdown.nvim',
-  dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },   -- if you prefer nvim-web-devicons
-  -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-mini/mini.nvim' }, -- if you use the mini.nvim suite
-  -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-mini/mini.icons' }, -- if you use standalone mini plugins
-  ---@module 'render-markdown'
-  ---@type render.md.UserConfig
+  dependencies = { 'nvim-tree/nvim-web-devicons' },
   ft = { "markdown" },
   opts = {
     -- from https://github.com/patricorgi/dotfiles/
@@ -45,7 +41,7 @@ local render_markdown = {
     heading = {
       icons = { ' 󰼏 ', ' 󰎨 ', ' 󰼑 ', ' 󰎲 ', ' 󰼓 ', ' 󰎴 ' },
       border = true,
-      render_modes = true,       -- keep rendering while inserting
+      render_modes = true, -- keep rendering while inserting
     },
     checkbox = {
       unchecked = {
@@ -84,7 +80,7 @@ local render_markdown = {
     anti_conceal = {
       disabled_modes = { 'n' },
       ignore = {
-        bullet = true,         -- render bullet in insert mode
+        bullet = true, -- render bullet in insert mode
         head_border = true,
         head_background = true,
       },
