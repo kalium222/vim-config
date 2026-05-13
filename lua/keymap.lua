@@ -3,56 +3,56 @@
 -- leaderkey should be defined before lazy-plug
 -- it is defined in the lua/options.lua
 
-local opts = {
+local default_opts = {
   noremap = true,
-  silent = true
+  silent = true,
 }
 
+---@class Mapping
+---@field [1] string          lhs
+---@field [2] string|function rhs
+---@field mode? string        default 'n'
+---@field opts? table         merged onto default_opts
+
+---@type Mapping[]
 local mappings = {
   -- windows jump
-  { mode = 'n', lhs = '<Leader>h',  rhs = [[<C-w>h | <cmd>wall<CR>]],                 opts = opts },
-  { mode = 'n', lhs = '<Leader>j',  rhs = [[<C-w>j | <cmd>wall<CR>]],                 opts = opts },
-  { mode = 'n', lhs = '<Leader>k',  rhs = [[<C-w>k | <cmd>wall<CR>]],                 opts = opts },
-  { mode = 'n', lhs = '<Leader>l',  rhs = [[<C-w>l | <cmd>wall<CR>]],                 opts = opts },
+  { '<Leader>h',  [[<C-w>h | <cmd>wall<CR>]] },
+  { '<Leader>j',  [[<C-w>j | <cmd>wall<CR>]] },
+  { '<Leader>k',  [[<C-w>k | <cmd>wall<CR>]] },
+  { '<Leader>l',  [[<C-w>l | <cmd>wall<CR>]] },
   -- tab page jump
-  { mode = 'n', lhs = '<Leader>-',  rhs = '<cmd>tabp<CR> | <cmd>wall<CR>',            opts = opts },
-  { mode = 'n', lhs = '<Leader>=',  rhs = '<cmd>tabn<CR> | <cmd>wall<CR>',            opts = opts },
+  { '<Leader>-',  '<cmd>tabp<CR> | <cmd>wall<CR>' },
+  { '<Leader>=',  '<cmd>tabn<CR> | <cmd>wall<CR>' },
   -- nvimtree
-  { mode = 'n', lhs = '<Leader>\\', rhs = '<cmd>NvimTreeToggle<CR>',                  opts = opts },
-  { mode = 'n', lhs = '<Leader>|',  rhs = '<cmd>NvimTreeFocus<CR>',                   opts = opts },
+  { '<Leader>\\', '<cmd>NvimTreeToggle<CR>' },
+  { '<Leader>|',  '<cmd>NvimTreeFocus<CR>' },
   -- Lspsaga
-  -- definition
-  { mode = 'n', lhs = 'gd',         rhs = '<cmd>Lspsaga goto_definition<CR>',         opts = opts },
-  { mode = 'n', lhs = 'gt',         rhs = '<cmd>Lspsaga goto_type_definition<CR>',    opts = opts },
-  -- references
-  { mode = 'n', lhs = 'gr',         rhs = '<cmd>Lspsaga finder<CR>',                  opts = opts },
-  -- lsp format
-  { mode = 'n', lhs = '<Leader>F',  rhs = vim.lsp.buf.format,                         opts = opts },
-  -- rename
-  { mode = 'n', lhs = '<Leader>rn', rhs = '<cmd>Lspsaga rename<CR>',                  opts = opts },
-  -- hover
-  { mode = 'n', lhs = 'K',          rhs = '<cmd>Lspsaga hover_doc<CR>',               opts = opts },
-  -- diagnostic info
-  { mode = 'n', lhs = '<Leader>d',  rhs = '<cmd>Lspsaga show_line_diagnostics<CR>',   opts = opts },
-  { mode = 'n', lhs = '<Leader>D',  rhs = '<cmd>Lspsaga show_buf_diagnostics<CR>',    opts = opts },
-  -- code action
-  { mode = 'n', lhs = '<Leader>c',  rhs = '<cmd>Lspsaga code_action<CR>',             opts = opts },
+  { 'gd',         '<cmd>Lspsaga goto_definition<CR>' },
+  { 'gt',         '<cmd>Lspsaga goto_type_definition<CR>' },
+  { 'gr',         '<cmd>Lspsaga finder<CR>' },
+  { '<Leader>F',  vim.lsp.buf.format },
+  { '<Leader>rn', '<cmd>Lspsaga rename<CR>' },
+  { 'K',          '<cmd>Lspsaga hover_doc<CR>' },
+  { '<Leader>d',  '<cmd>Lspsaga show_line_diagnostics<CR>' },
+  { '<Leader>D',  '<cmd>Lspsaga show_buf_diagnostics<CR>' },
+  { '<Leader>c',  '<cmd>Lspsaga code_action<CR>' },
   -- Telescope
-  { mode = 'n', lhs = '<Leader>ff', rhs = '<cmd>Telescope find_files<CR>',            opts = opts },
-  { mode = 'n', lhs = '<Leader>fg', rhs = '<cmd>Telescope live_grep<CR>',             opts = opts },
-  { mode = 'n', lhs = '<Leader>fb', rhs = '<cmd>Telescope buffers<CR>',               opts = opts },
-  { mode = 'n', lhs = '<Leader>fh', rhs = '<cmd>Telescope help_tags<CR>',             opts = opts },
+  { '<Leader>ff', '<cmd>Telescope find_files<CR>' },
+  { '<Leader>fg', '<cmd>Telescope live_grep<CR>' },
+  { '<Leader>fb', '<cmd>Telescope buffers<CR>' },
+  { '<Leader>fh', '<cmd>Telescope help_tags<CR>' },
   -- ToggleTerm
-  { mode = 'n', lhs = '<Leader>ti', rhs = '<cmd>ToggleTerm direction=horizontal<CR>', opts = opts },
-  { mode = 'n', lhs = '<Leader>tv', rhs = '<cmd>ToggleTerm direction=vertical<CR>',   opts = opts },
-  { mode = 'n', lhs = '<Leader>tf', rhs = '<cmd>ToggleTerm direction=float<CR>',      opts = opts },
-  { mode = 'n', lhs = '<Leader>tt', rhs = '<cmd>ToggleTerm direction=tab<CR>',        opts = opts },
+  { '<Leader>ti', '<cmd>ToggleTerm direction=horizontal<CR>' },
+  { '<Leader>tv', '<cmd>ToggleTerm direction=vertical<CR>' },
+  { '<Leader>tf', '<cmd>ToggleTerm direction=float<CR>' },
+  { '<Leader>tt', '<cmd>ToggleTerm direction=tab<CR>' },
   -- others
-  { mode = 'n', lhs = '<Leader>,',  rhs = '<cmd>pop<CR>',                             opts = opts },
-  { mode = 'n', lhs = '<Leader>.',  rhs = '<cmd>tag<CR>',                             opts = opts },
-  { mode = 'n', lhs = '<C-t>',      rhs = '<Nop>',                                    opts = opts },
+  { '<Leader>,',  '<cmd>pop<CR>' },
+  { '<Leader>.',  '<cmd>tag<CR>' },
+  { '<C-t>',      '<Nop>' },
 }
 
-for _, map in ipairs(mappings) do
-  vim.keymap.set(map.mode, map.lhs, map.rhs, map.opts)
+for _, m in ipairs(mappings) do
+  vim.keymap.set(m.mode or 'n', m[1], m[2], vim.tbl_extend('force', default_opts, m.opts or {}))
 end
