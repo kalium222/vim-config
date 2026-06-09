@@ -31,14 +31,14 @@ local blink = {
       ['<S-Tab>'] = { 'select_prev', 'fallback' },
       ['<CR>'] = { 'accept', 'fallback' },
     },
-    signature = {
-      enabled = true,
-      window = { show_documentation = true }
-    },
     appearance = {
       -- 'mono' (default) for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
       -- Adjusts spacing to ensure icons are aligned
       nerd_font_variant = 'mono'
+    },
+    signature = {
+      enabled = true,
+      window = { show_documentation = false }
     },
     completion = {
       accept = {
