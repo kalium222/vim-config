@@ -36,7 +36,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
   end,
 })
 -- folding with lsp
-vim.o.foldlevel = 5
+vim.o.foldlevel = 3
 
 -- NOTE: why this work?
 -- change folding style
