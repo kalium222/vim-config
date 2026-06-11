@@ -21,13 +21,9 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   spec = {
     { import = "plugins.theme" },
-    { import = "plugins.editor-extensions" },
-    { import = "plugins.git-integration" },
+    { import = "plugins.editor" },
     { import = "plugins.lsp" },
-    { import = "plugins.lsp-conf" },
   },
   checker = { enable = true },
-  rocks = {
-    enabled = false
-  }
+  rocks = { enabled = false },
 })

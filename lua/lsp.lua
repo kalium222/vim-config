@@ -1,4 +1,4 @@
--- NOTE: config for nvim lsp client support
+-- NOTE: config for nvim builtin lsp client
 
 -- diagnose sign
 vim.diagnostic.config({
