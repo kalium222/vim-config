@@ -1,6 +1,17 @@
 -- lspconfig
 
 local function all_lsp_config()
+  -- simple ones
+  vim.lsp.enable('hls')
+  vim.lsp.enable('clangd')
+  vim.lsp.enable('gdscript')
+  vim.lsp.enable 'ts_ls'
+  vim.lsp.enable('nil_ls')
+  vim.lsp.enable('roslyn_ls')
+  vim.lsp.enable('bashls')
+  vim.lsp.enable('texlab')
+  vim.lsp.enable('rust_analyzer')
+
   -- lua_ls
   vim.lsp.config('lua_ls', {
     on_init = function(client)
@@ -71,15 +82,13 @@ local function all_lsp_config()
   })
   vim.lsp.enable('qmlls')
 
-  vim.lsp.enable('hls')
-  vim.lsp.enable('clangd')
-  vim.lsp.enable('gdscript')
-  vim.lsp.enable 'ts_ls'
-  vim.lsp.enable('nil_ls')
-  vim.lsp.enable('roslyn_ls')
-  vim.lsp.enable('bashls')
-  vim.lsp.enable('texlab')
-  vim.lsp.enable('rust_analyzer')
+  -- lean
+  vim.lsp.config['leanls'] = {
+    cmd = { 'lean', '--server' },
+    filetypes = { 'lean' },
+    root_markers = { 'lakefile.toml' },
+  }
+  vim.lsp.enable('leanls')
 end
 
 local lspconfig = {
