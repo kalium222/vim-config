@@ -5,21 +5,21 @@ local telescope = {
     'nvim-lua/plenary.nvim',
     { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
   },
-  opts = {
-    defaults = {
-      mappings = {
-        n = {
-          ["o"] = "select_default",
-          ["s"] = "select_vertical",
-          ["i"] = "select_horizontal",
-          ["t"] = "select_tab",
+  opts = function()
+    require('telescope').load_extension('fzf')
+    return {
+      defaults = {
+        mappings = {
+          n = {
+            ["o"] = "select_default",
+            ["v"] = "select_vertical",
+            ["s"] = "select_horizontal",
+            ["t"] = "select_tab",
+          },
         },
       },
-    },
-  },
-  config = function()
-    require('telescope').load_extension('fzf')
-  end
+    }
+  end,
 }
 
 return telescope
