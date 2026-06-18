@@ -38,10 +38,10 @@ local mappings = {
   -- { '<Leader>D',  '<cmd>Lspsaga show_buf_diagnostics<CR>' },
   -- { '<Leader>c',  '<cmd>Lspsaga code_action<CR>' },
   -- Telescope
-  -- { '<Leader>ff', '<cmd>Telescope find_files<CR>' },
-  -- { '<Leader>fg', '<cmd>Telescope live_grep<CR>' },
-  -- { '<Leader>fb', '<cmd>Telescope buffers<CR>' },
-  -- { '<Leader>fh', '<cmd>Telescope help_tags<CR>' },
+  { '<Leader>ff', '<cmd>Telescope find_files<CR>' },
+  { '<Leader>fg', '<cmd>Telescope live_grep<CR>' },
+  { '<Leader>fb', '<cmd>Telescope buffers<CR>' },
+  { '<Leader>fh', '<cmd>Telescope help_tags<CR>' },
   -- ToggleTerm
   -- { '<Leader>ti', '<cmd>ToggleTerm direction=horizontal<CR>' },
   -- { '<Leader>tv', '<cmd>ToggleTerm direction=vertical<CR>' },

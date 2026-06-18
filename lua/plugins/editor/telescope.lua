@@ -3,6 +3,7 @@ local telescope = {
   lazy = false,
   dependencies = {
     'nvim-lua/plenary.nvim',
+    { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
   },
   opts = {
     defaults = {
@@ -16,6 +17,9 @@ local telescope = {
       },
     },
   },
+  config = function()
+    require('telescope').load_extension('fzf')
+  end
 }
 
 return telescope
