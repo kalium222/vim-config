@@ -43,10 +43,10 @@ local mappings = {
   { '<Leader>fb', '<cmd>Telescope buffers<CR>' },
   { '<Leader>fh', '<cmd>Telescope help_tags<CR>' },
   -- ToggleTerm
-  -- { '<Leader>ti', '<cmd>ToggleTerm direction=horizontal<CR>' },
-  -- { '<Leader>tv', '<cmd>ToggleTerm direction=vertical<CR>' },
-  -- { '<Leader>tf', '<cmd>ToggleTerm direction=float<CR>' },
-  -- { '<Leader>tt', '<cmd>ToggleTerm direction=tab<CR>' },
+  { '<Leader>ts', '<cmd>ToggleTerm direction=horizontal<CR>' },
+  { '<Leader>ti', '<cmd>ToggleTerm direction=vertical<CR>' },
+  { '<Leader>tf', '<cmd>ToggleTerm direction=float<CR>' },
+  { '<Leader>tt', '<cmd>ToggleTerm direction=tab<CR>' },
   -- others
   -- { '<Leader>,',  '<cmd>pop<CR>' },
   -- { '<Leader>.',  '<cmd>tag<CR>' },
