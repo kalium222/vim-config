@@ -1,5 +1,9 @@
 -- Basic Config
 
+-- disable netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- tab
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4

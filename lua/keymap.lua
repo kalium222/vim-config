@@ -25,8 +25,8 @@ local mappings = {
   -- { '<Leader>-',  '<cmd>tabp<CR> | <cmd>wall<CR>' },
   -- { '<Leader>=',  '<cmd>tabn<CR> | <cmd>wall<CR>' },
   -- nvimtree
-  -- { '<Leader>\\', '<cmd>NvimTreeToggle<CR>' },
-  -- { '<Leader>|',  '<cmd>NvimTreeFocus<CR>' },
+  { '<Leader>\\', '<cmd>NvimTreeToggle<CR>' },
+  { '<Leader>|',  '<cmd>NvimTreeFocus<CR>' },
   -- Lspsaga
   -- { 'gd',         '<cmd>Lspsaga goto_definition<CR>' },
   -- { 'gt',         '<cmd>Lspsaga goto_type_definition<CR>' },
@@ -44,13 +44,12 @@ local mappings = {
   { '<Leader>fh', '<cmd>Telescope help_tags<CR>' },
   -- ToggleTerm
   { '<Leader>ts', '<cmd>ToggleTerm direction=horizontal<CR>' },
-  { '<Leader>ti', '<cmd>ToggleTerm direction=vertical<CR>' },
+  { '<Leader>tv', '<cmd>ToggleTerm direction=vertical<CR>' },
   { '<Leader>tf', '<cmd>ToggleTerm direction=float<CR>' },
   { '<Leader>tt', '<cmd>ToggleTerm direction=tab<CR>' },
   -- others
   -- { '<Leader>,',  '<cmd>pop<CR>' },
   -- { '<Leader>.',  '<cmd>tag<CR>' },
-  -- { '<C-t>',      '<Nop>' },
 }
 
 for _, m in ipairs(mappings) do

@@ -13,10 +13,10 @@ local function nvim_tree_custom_conf(bufnr)
   api.config.mappings.default_on_attach(bufnr)
   -- custom mappings
   vim.keymap.del('n', '<Tab>', { buffer = bufnr })
-  vim.keymap.set('n', '?', api.tree.toggle_help, opts('Help'))
   vim.keymap.del('n', 'g?', { buffer = bufnr })
-  vim.keymap.set('n', 'i', api.node.open.horizontal, opts('Open: Herizontal'))
-  vim.keymap.set('n', 's', api.node.open.vertical, opts('Open: Vertical'))
+  vim.keymap.set('n', '?', api.tree.toggle_help, opts('Help'))
+  vim.keymap.set('n', 's', api.node.open.horizontal, opts('Open: Herizontal'))
+  vim.keymap.set('n', 'v', api.node.open.vertical, opts('Open: Vertical'))
   vim.keymap.set('n', 't', api.node.open.tab, opts('Open: Vertical'))
 end
 
