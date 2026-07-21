@@ -28,7 +28,7 @@ local nvim_tree = {
     on_attach = nvim_tree_custom_conf,
     filesystem_watchers = {
       ignore_dirs = {
-        "Temp", "obj", "Library", "Logs"
+        "Temp", "obj", "Library", "Logs", ".godot"
       }
     }
   }
